@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modwaveforms"
+version = "0.1.0"
+description = "Collection of modified waveforms for parameter estimation"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    { name = "Jose María Ezquiaga", email = "jose.ezquiaga@nbi.ku.dk" },
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "mpmath",
+    "bilby",
+    "bilby_pipe",
+    "lalsuite",
+]
+
+[project.urls]
+Homepage = "https://github.com/ezquiaga/modwaveforms"
+
+[tool.setuptools]
+packages = ["modwaveforms", "modwaveforms.utils"]
